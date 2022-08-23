@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1661177626 source:c:\users\danila\desktop\quadratka\quadratka\main.cpp
+1661247365 source:c:\users\danila\desktop\quadratka\quadratka\main.cpp
 	<stdio.h>
 	<math.h>
+	<assert.h>
 
