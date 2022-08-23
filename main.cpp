@@ -1,72 +1,12 @@
 #include<stdio.h>
 #include<math.h>
 #include<assert.h>
-
-//! is returned by solve functions if solution is any number
-const int EQ_anyroot = -1;
-
-//! Solves linear equation ax + b = 0
-//! @param [in] a a
-//! @param [in] b b
-//! @param [out] x pointer for where to put solution
-//! @return number of solutions found
-//! @note returns EQ_anyroot if solution is any number
-int solveLinear(double a,double b,double* x){
-    assert(x);
-    assert(std::isfinite(a));
-    assert(std::isfinite(b));
-    if(a == 0){
-        if(b == 0){
-            return EQ_anyroot;
-        }
-        else{
-            return 0;
-        }
-    }
-    else{
-        *x = -b/a;
-        return 1;
-    }
-}
-//! Solves sqare equation ax^2 + bx + c = 0
-//! @param [in] a a
-//! @param [in] b b
-//! @param [in] c c
-//! @param [out] x1 pointer for where to put solution 1
-//! @param [out] x2 pointer for where to put solution 2
-//! @return number of solutions found
-//! @note returns EQ_anyroot if solution is any number
-int solveSqare(double a,double b,double c,double* x1,double* x2){
-    assert(x1);
-    assert(x2);
-    assert(x1 != x2);
-    assert(std::isfinite(a));
-    assert(std::isfinite(b));
-    assert(std::isfinite(c));
-    if(a == 0){
-        return solveLinear(b,c,x1);
-    }
-    float discriminant = (b*b)-(4*a*c);
-    if(discriminant < 0){
-        return 0;
-    }
-    else if(discriminant == 0){
-        *x1 = -b/(2*a);
-        return 1;
-    }
-    else{
-        float sqrtdisc = sqrt(discriminant);
-        *x1 = (sqrtdisc-b)/(2*a);
-        *x2 = (-sqrtdisc-b)/(2*a);
-        return 2;
-    }
-}
+#include "equation.h"
 int main()
 {
     printf("Enter coeficients a,b,c for equation ax^2 + bx + c = 0\n");
     double a=NAN,b=NAN,c=NAN,x1=NAN,x2=NAN;
-    scanf("%lf %lf %lf",&a,&b,&c);
-    if(!(std::isfinite(a) && std::isfinite(b) && std::isfinite(c))){
+    if(scanf("%lf %lf %lf",&a,&b,&c) != 3){
         printf("Inputs should be three correct dechimal numbers\n");
         return 0;
     }
