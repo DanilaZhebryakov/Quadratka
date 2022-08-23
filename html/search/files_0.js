@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['equation_2ecpp_0',['equation.cpp',['../equation_8cpp.html',1,'']]],
+  ['equation_2eh_1',['equation.h',['../equation_8h.html',1,'']]]
 ];

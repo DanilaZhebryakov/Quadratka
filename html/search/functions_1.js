@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['solvelinear_0',['solveLinear',['../main_8cpp.html#ae0d929239618e5712a4dfd6ccf3a2ef8',1,'main.cpp']]],
-  ['solvesqare_1',['solveSqare',['../main_8cpp.html#aa02a0fcd806211bb50ff6cfc0b0e03f5',1,'main.cpp']]]
+  ['solvelinear_0',['solveLinear',['../equation_8cpp.html#a402a117e850635ac5c9c775c4d6da5c0',1,'solveLinear(double a, double b, double *const x):&#160;equation.cpp'],['../equation_8h.html#a402a117e850635ac5c9c775c4d6da5c0',1,'solveLinear(double a, double b, double *const x):&#160;equation.cpp']]],
+  ['solvesqare_1',['solveSqare',['../equation_8cpp.html#a73373241daabf0490a9357775322fae6',1,'solveSqare(double a, double b, double c, double *const x1, double *const x2):&#160;equation.cpp'],['../equation_8h.html#a73373241daabf0490a9357775322fae6',1,'solveSqare(double a, double b, double c, double *const x1, double *const x2):&#160;equation.cpp']]]
 ];

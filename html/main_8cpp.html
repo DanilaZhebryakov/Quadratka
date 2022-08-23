@@ -67,29 +67,19 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="equation_8h_source.html">equation.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae0d929239618e5712a4dfd6ccf3a2ef8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae0d929239618e5712a4dfd6ccf3a2ef8">solveLinear</a> (double a, double b, double *x)</td></tr>
-<tr class="separator:ae0d929239618e5712a4dfd6ccf3a2ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02a0fcd806211bb50ff6cfc0b0e03f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa02a0fcd806211bb50ff6cfc0b0e03f5">solveSqare</a> (double a, double b, double c, double *x1, double *x2)</td></tr>
-<tr class="separator:aa02a0fcd806211bb50ff6cfc0b0e03f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a289a78d5f1e42f1eac3748b8d61121bd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a289a78d5f1e42f1eac3748b8d61121bd">EQ_anyroot</a> = -1</td></tr>
-<tr class="memdesc:a289a78d5f1e42f1eac3748b8d61121bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">is returned by solve functions if solution is any number  <a href="main_8cpp.html#a289a78d5f1e42f1eac3748b8d61121bd">More...</a><br /></td></tr>
-<tr class="separator:a289a78d5f1e42f1eac3748b8d61121bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -106,125 +96,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae0d929239618e5712a4dfd6ccf3a2ef8" name="ae0d929239618e5712a4dfd6ccf3a2ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d929239618e5712a4dfd6ccf3a2ef8">&#9670;&nbsp;</a></span>solveLinear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int solveLinear </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Solves linear equation ax + b = 0 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>a </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>b </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>pointer for where to put solution </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of solutions found </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>returns EQ_anyroot if solution is any number </dd></dl>
-
-</div>
-</div>
-<a id="aa02a0fcd806211bb50ff6cfc0b0e03f5" name="aa02a0fcd806211bb50ff6cfc0b0e03f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa02a0fcd806211bb50ff6cfc0b0e03f5">&#9670;&nbsp;</a></span>solveSqare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int solveSqare </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>x2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Solves sqare equation ax^2 + bx + c = 0 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>a </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>b </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>c </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x1</td><td>pointer for where to put solution 1 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">x2</td><td>pointer for where to put solution 2 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of solutions found </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>returns EQ_anyroot if solution is any number </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a289a78d5f1e42f1eac3748b8d61121bd" name="a289a78d5f1e42f1eac3748b8d61121bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a289a78d5f1e42f1eac3748b8d61121bd">&#9670;&nbsp;</a></span>EQ_anyroot</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int EQ_anyroot = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>is returned by solve functions if solution is any number </p>
 
 </div>
 </div>
