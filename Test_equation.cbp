@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Quadratka" />
+		<Option title="Test_equation" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Quadratka" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/Test_equation" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Quadratka" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/Test_equation" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -34,10 +34,7 @@
 		</Compiler>
 		<Unit filename="Test_equation.cpp" />
 		<Unit filename="doublecmp.cpp" />
-		<Unit filename="doublecmp.h" />
 		<Unit filename="equation.cpp" />
-		<Unit filename="equation.h" />
-		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

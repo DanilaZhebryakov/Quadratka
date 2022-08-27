@@ -1,14 +1,34 @@
 # depslib dependency file v1.0
-1661252610 source:c:\users\danila\desktop\quadratka\quadratka\main.cpp
+1661348792 source:c:\users\danila\desktop\quadratka\quadratka\main.cpp
 	<stdio.h>
 	<math.h>
 	<assert.h>
+	<string.h>
+	"equation.h"
+	"assertp.h"
+	"Test_equation.h"
+
+1661340726 c:\users\danila\desktop\quadratka\quadratka\equation.h
+
+1661346364 source:c:\users\danila\desktop\quadratka\quadratka\equation.cpp
+	<stdio.h>
+	<math.h>
+	"assertp.h"
+	"doublecmp.h"
 	"equation.h"
 
-1661253395 c:\users\danila\desktop\quadratka\quadratka\equation.h
+1661338993 c:\users\danila\desktop\quadratka\quadratka\assertp.h
 
-1661253329 source:c:\users\danila\desktop\quadratka\quadratka\equation.cpp
+1661346456 c:\users\danila\desktop\quadratka\quadratka\doublecmp.h
+
+1661346456 source:c:\users\danila\desktop\quadratka\quadratka\doublecmp.cpp
+	"doublecmp.h"
+
+1661349426 source:c:\users\danila\desktop\quadratka\quadratka\test_equation.cpp
 	<stdio.h>
 	<math.h>
-	<assert.h>
+	"equation.h"
+	"doublecmp.h"
+
+1661348810 c:\users\danila\desktop\quadratka\quadratka\test_equation.h
 
