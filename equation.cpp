@@ -1,48 +1,52 @@
-#include<stdio.h>
-#include<math.h>
-#include<assert.h>
-const int EQ_anyroot = -1;
+#include <stdio.h>
+#include <math.h>
 
-int solveLinear(double a,double b,double* const x){
-    assert(x);
-    assert(std::isfinite(a));
-    assert(std::isfinite(b));
-    if(a == 0){
-        if(b == 0){
-            return EQ_anyroot;
+#include "assertp.h"
+#include "doublecmp.h"
+#include "equation.h"
+
+enum number_of_roots solveLinear(double a, double b, double* const x){
+    assertp(x != nullptr);
+    assertp(std::isfinite(a));
+    assertp(std::isfinite(b));
+
+    if(zeroEps(a)){
+        if(zeroEps(b)){
+            return ROOTS_INFINITE;
         }
         else{
-            return 0;
+            return ROOTS_NONE;
         }
     }
-    else{
-        *x = -b/a;
-        return 1;
-    }
+
+    *x = -b / a;
+    return ROOTS_ONE;
 }
 
-int solveSqare(double a,double b,double c,double* const x1,double* const x2){
-    assert(x1);
-    assert(x2);
-    assert(x1 != x2);
-    assert(std::isfinite(a));
-    assert(std::isfinite(b));
-    assert(std::isfinite(c));
-    if(a == 0){
-        return solveLinear(b,c,x1);
+enum number_of_roots solveSquare(double a, double b, double c, double* const x1, double* const x2){
+    assertp(x1 != nullptr);
+    assertp(x2 != nullptr);
+    assertp(x1 != x2);
+    assertp(std::isfinite(a));
+    assertp(std::isfinite(b));
+    assertp(std::isfinite(c));
+
+    if (zeroEps(a)) {
+        return solveLinear(b, c, x1);
     }
-    float discriminant = (b*b)-(4*a*c);
-    if(discriminant < 0){
-        return 0;
+
+    double discriminant = b*b - 4*a*c;
+    if (discriminant < 0) {
+        return ROOTS_NONE;
     }
-    else if(discriminant == 0){
-        *x1 = -b/(2*a);
-        return 1;
+
+    if (discriminant < eps) {
+        *x1 = -b / (2*a);
+        return ROOTS_ONE;
     }
-    else{
-        float sqrtdisc = sqrt(discriminant);
-        *x1 = (sqrtdisc-b)/(2*a);
-        *x2 = (-sqrtdisc-b)/(2*a);
-        return 2;
-    }
+
+    double sqrtdisc = sqrt(discriminant);
+    *x1 = ( sqrtdisc-b) / (2*a);
+    *x2 = (-sqrtdisc-b) / (2*a);
+    return ROOTS_TWO;
 }
