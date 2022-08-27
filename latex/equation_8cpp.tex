@@ -1,0 +1,63 @@
+\hypertarget{equation_8cpp}{}\doxysection{C\+:/\+Users/\+Danila/\+Desktop/\+Quadratka/\+Quadratka/equation.cpp File Reference}
+\label{equation_8cpp}\index{C:/Users/Danila/Desktop/Quadratka/Quadratka/equation.cpp@{C:/Users/Danila/Desktop/Quadratka/Quadratka/equation.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}assertp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}doublecmp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}equation.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{equation_8h_a6e571f01fc10ed195d196e64fd2d285e}{number\+\_\+of\+\_\+roots}} \mbox{\hyperlink{equation_8cpp_acd8a4645de3234d47e32931762ce50fe}{solve\+Linear}} (double a, double b, double $\ast$const x)
+\item 
+enum \mbox{\hyperlink{equation_8h_a6e571f01fc10ed195d196e64fd2d285e}{number\+\_\+of\+\_\+roots}} \mbox{\hyperlink{equation_8cpp_a9d56240da4843cfcd6339f6ad4d0da38}{solve\+Square}} (double a, double b, double c, double $\ast$const x1, double $\ast$const x2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{equation_8cpp_acd8a4645de3234d47e32931762ce50fe}\label{equation_8cpp_acd8a4645de3234d47e32931762ce50fe}} 
+\index{equation.cpp@{equation.cpp}!solveLinear@{solveLinear}}
+\index{solveLinear@{solveLinear}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{solveLinear()}{solveLinear()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{equation_8h_a6e571f01fc10ed195d196e64fd2d285e}{number\+\_\+of\+\_\+roots}} solve\+Linear (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double $\ast$const}]{x }\end{DoxyParamCaption})}
+
+Solves linear equation ax + b = 0 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & pointer for where to put solution \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of solutions found 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+returns EQ\+\_\+anyroot if solution is any number 
+\end{DoxyNote}
+\mbox{\Hypertarget{equation_8cpp_a9d56240da4843cfcd6339f6ad4d0da38}\label{equation_8cpp_a9d56240da4843cfcd6339f6ad4d0da38}} 
+\index{equation.cpp@{equation.cpp}!solveSquare@{solveSquare}}
+\index{solveSquare@{solveSquare}!equation.cpp@{equation.cpp}}
+\doxysubsubsection{\texorpdfstring{solveSquare()}{solveSquare()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{equation_8h_a6e571f01fc10ed195d196e64fd2d285e}{number\+\_\+of\+\_\+roots}} solve\+Square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$const}]{x1,  }\item[{double $\ast$const}]{x2 }\end{DoxyParamCaption})}
+
+Solves sqare equation ax$^\wedge$2 + bx + c = 0 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer for where to put solution 1 \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer for where to put solution 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of solutions found 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+returns EQ\+\_\+anyroot if solution is any number 
+\end{DoxyNote}

@@ -1,0 +1,18 @@
+\hypertarget{assertp_8h_source}{}\doxysection{assertp.\+h}
+\label{assertp_8h_source}\index{C:/Users/Danila/Desktop/Quadratka/Quadratka/assertp.h@{C:/Users/Danila/Desktop/Quadratka/Quadratka/assertp.h}}
+\mbox{\hyperlink{assertp_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ASSERTP\_H\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ASSERTP\_H\_INCLUDED}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define assertp(cond) \{                                                                                                     \(\backslash\)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{    if(!(cond)) \{                                                                                                           \(\backslash\)}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{        fprintf(stderr,"{}Assertion failed: \%s \(\backslash\)nFile:\%s \(\backslash\)nLine:\%d \(\backslash\)nFunc:\%s\(\backslash\)n"{}},\#cond,\_\_FILE\_\_,\_\_LINE\_\_,\_\_PRETTY\_FUNCTION\_\_); \(\backslash\)}
+\DoxyCodeLine{7         exit(EXIT\_FAILURE);                                                                                                 \(\backslash\)}
+\DoxyCodeLine{8     \}                                                                                                                       \(\backslash\)}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ASSERTP\_H\_INCLUDED}}
+
+\end{DoxyCode}
